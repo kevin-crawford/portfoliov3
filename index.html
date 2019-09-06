@@ -1,38 +1,238 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Page Title</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" media="screen" href="index.css" />
-	<link href="https://fonts.googleapis.com/css?family=Karla|Rubik&display=swap" rel="stylesheet">
-	<script src="index.js"></script>
-</head>
-<body>
-	<header role="banner">
-		<div class="page-wrap clearfix">
-			<nav id="main-nav" role="navigation">
-				<ul>
-					<li><a href="#about">About</a></li>
-					<li><a href="#projects">Projects</a></li>
-					<li><a href="#timeline">Timeline</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
-	<section class="home overlay">
-		<div class="page-wrap">
-			<h1>Kevin Crawford</h1>
-			<h2>Coding has given me a creative outlet and a way to express myself, solve real world problems, and collaborate with others.</h2>
-			<a class="button check-resume" href="">View Resume</a>
-		</div>
-	</section>
-	<section id="skills-description">
-		<div class="page-wrap">
-			<h2>Skills</h2>
-		</div>
-	</section>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Kevin Crawford | Full Stack Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Karla|Rubik&display=swap"
+      rel="stylesheet"
+		/>
+		<link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <script src="index.js"></script>
+	</head>
+	
+  <body>
+    <header role="banner">
+      <div class="page-wrap clearfix">
+        <nav class="navbar">
+						<label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
+							<i class="fa fa-bars"></i>
+						</label>
+						<input type="checkbox" id="chkToggle"></input>
+						<ul class="main-nav" id="js-menu">
+							<li>
+								<a href="#" class="nav-links">Skills</a>
+							</li>
+							<li>
+								<a href="#" class="nav-links">Projects</a>
+							</li>
+							<li>
+								<a href="#" class="nav-links">Timeline</a>
+							</li>
+							<li>
+								<a href="#" class="nav-links">Contact</a>
+							</li>
+						</ul>
+					</nav>
+      </div>
+    </header>
+    <section class="home overlay">
+      <div class="page-wrap">
+        <h1>Kevin Crawford</h1>
+        <h2>
+          Coding has given me a creative outlet and a way to express myself,
+          solve real world problems, and collaborate with others.
+        </h2>
+        <a
+          class="button check-resume"
+          href="https://drive.google.com/file/d/1qRDIBBBfu2jNCYHzqWLq6kD9dfsfZShS/view?usp=sharing"
+          alt="Kevin Crawfords Resume"
+          target="_blank"
+          rel="noopener noreferrer"
+          >View Resume</a
+				> 
+      </div>
+		</section>
+		
+    <section id="skills-description">
+      <div class="page-wrap">
+				<h2>Skills</h2>
+      </div>
+		</section>
+
+		<section id="skills">
+			<div class="flexbox-p page-wrap">
+				<div class="skills-container">
+					<i class="fas fa-microphone"></i>
+					<h3>Communication</h3>
+					<p>Confident in sharing my ideas in meetings,
+						with teams and customers. Listen, the best communicators spend as much time listening as they do talking. 
+						Its important to be assertive but not aggressive and strategize how to skillfully push the best ideas forward.</p>
+				</div>
+				<div class="skills-container">
+					<i class="fas fa-brain"></i>
+					<h3>Critical Thinking</h3>
+					<p>Employ a methodical approach that involves asking questions,
+							uncovering false assumptions, and evaluating various approaches to
+							the problem at hand before deciding on the best path forward.</p>
+				</div>
+				<div class="skills-container">
+						<i class="fas fa-exclamation"></i>
+					<h3>Problem Solving</h3>
+					<p>Problems are more often than not the most effective teacher. Once
+							you know what exactly the problem is, find out the root cause which
+							will create clarity towards the best solution.</p>
+				</div>
+				<div class="skills-container">
+						<i class="fas fa-code-branch"></i>
+					<h3>Version Control</h3>
+					<p>Version control software was successfully implemented into all my
+							previous projects using GIT. Development processes undergo numerous
+							life cycles. Ability to navigate such controls can greatly increase
+							productivity and collaboration.</p>
+				</div>
+				<div class="skills-container">
+						<i class="fas fa-vial"></i>
+					<h3>Unit Testing</h3>
+					<p>Unit testings primary benefit is that it makes the coding process
+							more agile. When you add more and more features to a software, you
+							sometimes need to change old design and code. But changing already
+							tested code is both risky and costly.</p>
+				</div>
+				<div class="skills-container">
+						<i class="fas fa-code-branch"></i>
+					<h3>Command Line</h3>
+					<p>Command Line Interfaces (CLI) improve efficiency through its simple
+							design and minimal system resource use. Ability to navigate such
+							systems lead to better control and faster development speeds.</p>
+				</div>
+			</div>
+		</section>
+		<section id="projects-description">
+			<div class="page-wrap">
+				<h2>Projects</h2>
+			</div>
+		</section>
+		<section id="projects">
+				<div class="flexbox-p page-wrap">
+					<div class="projects-container">
+						<h3>GPS Employee Portal</h3>
+						<p>In house employee client for a local pool retail business. 
+							Allows employees to schedule upcoming customer jobs with a pool technician. 
+							Also serves as a customer database to build a customers history of previous jobs and sales.  
+							Built with React, Node/Express, MongoDB, and Passport.</p>
+					</div>
+					<div class="projects-container">
+						<h3>Social Rift</h3>
+						<p>Social media platform that functions similar to Twitter. 
+							Users are able to create what I call "Rifts", 
+							that are able to be commented on or liked by yourself and other users. 
+							Built with React, Redux, Node.js, database served on Google Firebase.</p>
+					</div>
+					<div class="projects-container">
+						<h3>Sneakerlocker</h3>
+						<p>An easy way to itemize your sneaker collection into a digital catalogue. 
+							Shoe enthusiasts can add different pairs of shoes to their account where they start to build a locker.
+							Users can also view other owner’s lockers to compare collections. Built with JavaScript, CSS, jQuery, and Ajax.</p>
+					</div>
+				</div>
+		</section>
+		<section id="timeline-description">
+			<div class="page-wrap">
+				<h2>Timeline</h2>
+			</div>
+		</section>
+		<section id="timeline">
+			<div class="flexbox-p page-wrap">
+				<div class="timeline-container">
+						<div class="timeline-icon">
+								<i class="fas fa-vial"></i>
+						</div>
+						<h4>
+								Thinkful Bootcamp <span> 2018</span>
+							</h4>
+							<span>Full Stack Flex Engineering</span>
+							<p>
+								Learned industry best practices and practical software
+								development standards with a focus on HTML5, CSS3, JavaScript,
+								jQuery, Node.js, React, Redux, and algorithms & data
+								structures. Created and deployed mobile-first applications
+								while learning new languages and frameworks by collaborating
+								seve
+				</div>
+				<div class="timeline-container">
+						<div class="timeline-icon">
+								<i class="fas fa-vial"></i>
+						</div>
+						<h4>
+								Thinkful Bootcamp <span> 2018</span>
+							</h4>
+							<span>Full Stack Flex Engineering</span>
+							<p>
+								Learned industry best practices and practical software
+								development standards with a focus on HTML5, CSS3, JavaScript,
+								jQuery, Node.js, React, Redux, and algorithms & data
+								structures. Created and deployed mobile-first applications
+								while learning new languages and frameworks by collaborating
+								seve
+				</div>
+				<div class="timeline-container">
+					<div class="timeline-icon">
+							<i class="fas fa-vial"></i>
+					</div>
+						<h4>
+								Thinkful Bootcamp <span> 2018</span>
+							</h4>
+							<span>Full Stack Flex Engineering</span>
+							<p>
+								Learned industry best practices and practical software
+								development standards with a focus on HTML5, CSS3, JavaScript,
+								jQuery, Node.js, React, Redux, and algorithms & data
+								structures. Created and deployed mobile-first applications
+								while learning new languages and frameworks by collaborating
+								seve</p>
+				</div>
+				<div class="timeline-container">
+						<div class="timeline-icon">
+								<i class="fas fa-vial"></i>
+						</div>
+						<h4>
+								Thinkful Bootcamp <span> 2018</span>
+							</h4>
+							<span>Full Stack Flex Engineering</span>
+							<p>
+								Learned industry best practices and practical software
+								development standards with a focus on HTML5, CSS3, JavaScript,
+								jQuery, Node.js, React, Redux, and algorithms & data
+								structures. Created and deployed mobile-first applications
+								while learning new languages and frameworks by collaborating
+								seve</p>
+				</div>
+				<div class="timeline-container">
+						<div class="timeline-icon">
+								<i class="fas fa-vial"></i>
+						</div>
+						<h4>
+							Thinkful Bootcamp <span> 2018</span>
+						</h4>
+							<span>Full Stack Flex Engineering</span>
+						<p>
+							Learned industry best practices and practical software
+							development standards with a focus on HTML5, CSS3, JavaScript,
+							jQuery, Node.js, React, Redux, and algorithms & data
+							structures. Created and deployed mobile-first applications
+							while learning new languages and frameworks by collaborating
+							seve</p>
+				</div>
+			</div>
+		</section>
+  </body>
 </html>
