@@ -13,6 +13,10 @@
   float: right;
 } */
 
+.active {
+  background-color: black;
+}
+
 header[role="banner"] {
   width: 100%;
   position: fixed;
@@ -23,8 +27,7 @@ header[role="banner"] {
   transition: all 0.15s ease-in-out;
 }
 .navbar {
-  font-size: 18px;
-  padding-bottom: 10px;
+  font-size: 14px;
 }
 
 .main-nav {
@@ -65,7 +68,6 @@ header[role="banner"] {
 
 #chkToggle:checked + ul.main-nav {
   display: block;
-  background-color: rgba(255, 255, 255, 0.5);
 }
 /* SPLASH SCREEN */
 
@@ -274,6 +276,52 @@ SKILLS SECTION
   border: none;
   margin-left: 47%;
   margin-bottom: 1.5625em;
+}
+
+/* TIMELINE */
+#timeline {
+  margin-top: 25px;
+}
+.timeline-container {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.timeline-entry {
+  position: relative;
+  background: #f2f3f7;
+  padding: 1.5em;
+  margin-left: 60px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
+
+.timeline-container:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 4px;
+  background: #f2f3f7;
+  top: 40px;
+  bottom: -30px;
+  margin-left: 17px;
+}
+
+.timeline-icon {
+  display: block;
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  -moz-box-shadow: 0 0 0 5px #f2f3f7;
+  -webkit-box-shadow: 0 0 0 5px #f2f3f7;
+  box-shadow: 0 0 0 5px #f2f3f7;
+  line-height: 40px;
+  float: left;
 }
 
 /* LAYOUT STYLINGS */
