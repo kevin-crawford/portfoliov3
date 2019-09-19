@@ -19,14 +19,14 @@
 	z-index: 1;
 	justify-content: center;
 	align-items: center;
-	width: 80px;
-	height: 80px;
+	width: 50px;
+	height: 50px;
 	cursor: pointer;
 	transition: all .5s ease-in-out;
 }
 
 .menu-btn_burger {
-	width: 50px;
+	width: 30px;
 	height: 6px;
 	background: rgb(158, 158, 158);
 	border-radius: 5px;
@@ -38,7 +38,7 @@
 .menu-btn_burger::after{
 	content: '';
 	position: absolute;
-	width: 50px;
+	width: 30px;
 	height: 6px;
 	background: rgb(158, 158, 158);
 	border-radius: 5px;
@@ -84,8 +84,15 @@ header[role="banner"] {
 	list-style-type: none;
 }
 
-.nav-links {
+
+
+.main-nav li {
 	text-align: center;
+	
+	padding: 5px 0px;
+}
+
+.nav-links {
 	text-decoration: none;
 	color: white;
 }
@@ -99,7 +106,7 @@ header[role="banner"] {
 }
 
 .content-view {
-	background: rgba(0, 0, 0, 0.82);
+	background: #2196f394;
 	transition: all .5s ease-in-out;
 }
 /* SPLASH SCREEN */
@@ -417,7 +424,9 @@ li {
 	#skills-description h2, #projects-description h2, #timeline-description h2 {
 		font-size: 20px;
 	}
+}
 
+@media screen and (max-width: 400px) {
 	body p {
 		font-size: 12px;
 	}
@@ -425,7 +434,8 @@ li {
 
 @media screen and (max-width: 1024px) {
   #home .check-resume {
-    width: 45%;
+		width: 45%;
+		margin: 50px auto;
   }
 
   .projects-container hr {
@@ -436,7 +446,9 @@ li {
 
 /* DESKTOP */
 @media screen and (min-width: 768px) {
-  
+  #skills {
+		margin: 50px 10px;
+	}
   .projects-container p {
     font-size: 1.3em;
     width: 60%;
@@ -481,7 +493,7 @@ li {
 
 @media screen and (min-width: 1028px) {
   .projects-container {
-    padding: 20px 0px;
+    padding: 60px 0px;
   }
   .projects-container p {
     font-size: 1.3em;
@@ -493,6 +505,6 @@ li {
 
   #skills {
     max-width: 1300px;
-    margin: 20px auto;
+    margin: 50px auto;
   }
 }
